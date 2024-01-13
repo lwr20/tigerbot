@@ -2,6 +2,7 @@ FROM python:3.10-slim-bookworm
 RUN apt update
 RUN apt install -qy python3-pip
 RUN apt clean -y
+RUN pip install --upgrade pip
 RUN pip install wheel
 RUN pip install rshell
 
